@@ -1,0 +1,35 @@
+{
+  "art": {
+    "title": "The Art",
+  "subtitle": "Sip-Worthy Perfection",
+  "headline": "Made with Craft, Poured with Passion",
+  "paragraph": "This isn’t just a drink. It’s a carefully crafted moment made just for you.",
+  "featureLists":[
+    "Perfectly balanced blends",
+    "Garnished to perfection",
+    "Ice-cold every time",
+    "Expertly shaken & stirred"
+  ],
+  "goodLists" :[
+    "Handpicked ingredients",
+    "Signature techniques",
+    "Bartending artistry in action",
+    "Freshly muddled flavors"
+  ],
+  "imageIcon": "/images/check.png",
+  "imageUnder": "/images/under-img.jpg"
+  },
+  "hero":{
+    "title": "MOJITO",
+    "imageLeft": "/images/hero-left-leaf.png",
+    "imageRight": "/images/hero-right-leaf.png",
+    "paragraph": "Cool, Crisp, Classic",
+    "headFirst":"Sip the Spirit ",
+    "headSecond":"of Summer",
+    "subtitle" :"Every cocktail on our menu is a blend of premium ingredients, creative flair, and timeless recipes - designed to delight your senses.",
+    "imageIcon": "/content/images/check.png",
+    "imageUnder": "/content/images/under-img.jpg",
+    "link": "View Cocktails",
+    "video": "/videos/output.mp4"
+  }
+}

@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContentPage from '../components/ContentPage.astro';
+import Art from '../components/Art.jsx';
+import Hero from '../components/Hero.jsx';
+import data from '../json/Art.json'
+import NavBar from '../components/NavBar.jsx';
+import Cocktails from '../components/Cocktails.jsx';
+import About from '../components/About.jsx'
+import Menu from '../components/Menu.jsx'
+import Contact from '../components/Contact.jsx'
+const allContent = Object.values(import.meta.glob('./subpages/*.md', { eager: true }));
+const pageTitle = "Pagina de contenido";
+
+---
+
+<>
+	<NavBar client:only="react"  />
+	<Hero client:only="react" data={data.hero}/>
+	<Art client:only="react" data={data.art}/>
+	<Cocktails client:only="react"  />
+	<About client:only="react"  />
+	<Menu client:only="react"  />
+	<Contact client:only="react" />
+</>

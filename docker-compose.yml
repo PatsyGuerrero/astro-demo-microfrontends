@@ -1,0 +1,48 @@
+version: '3.4'
+
+services:
+  astro_shell:
+    image: astro.shell
+    build:
+      context: ./shell
+      dockerfile: ./Dockerfile
+    ports:
+      - 4321:4321
+
+  astro_content:
+    image: astro.content
+    build:
+      context: ./content
+      dockerfile: ./Dockerfile
+    ports:
+      - 4322:4322
+
+  astro_loan:
+    image: astro.loan
+    build:
+      context: ./loan
+      dockerfile: ./Dockerfile
+    ports:
+      - 4323:4323
+
+  astro_library:
+    image: astro.library
+    build:
+      context: ./library
+      dockerfile: ./Dockerfile
+    ports:
+      - 5143:4173
+    
+  nginx_service:
+    image: astro.nginx
+    restart: always
+    build:
+      context: ./nginx
+      dockerfile: ./Dockerfile
+    ports:
+      - 8080:8080
+    depends_on:
+      - astro_shell
+      - astro_content
+      - astro_loan
+      - astro_library
