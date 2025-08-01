@@ -7,7 +7,7 @@ export const prerender = false;
 export default function RemoteAppComponent({data}) {
 	return (
 		<Suspense fallback="Loading">
-			<RemoteApp/>
+			<RemoteApp data={data}/>
 		</Suspense>
 	);
 }

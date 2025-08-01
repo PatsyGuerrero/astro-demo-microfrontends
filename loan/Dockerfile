@@ -1,7 +1,5 @@
 FROM node:lts AS base
-ENV PUBLIC_CONTENTFUL_SPACE_ID="jhuukrkt1w7q" \
-    PUBLIC_CONTENTFUL_HOST="preview.contentful.com" \
-    PUBLIC_CONTENTFUL_TOKEN="TFxAVprHYQICGyKGkWUFdT47KGrDLqsZnP2Av2qZvHo"
+
 
 WORKDIR /app
 

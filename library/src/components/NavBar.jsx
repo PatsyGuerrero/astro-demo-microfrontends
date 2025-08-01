@@ -3,7 +3,7 @@ import { useGSAP } from '@gsap/react'
 
 import { navLinks } from '../constants/index.js'
 
-const Navbar = () => {
+const Navbar = ({data}) => {
  useGSAP(() => {
 	const navTween = gsap.timeline({
 	 scrollTrigger: {
@@ -24,12 +24,12 @@ const Navbar = () => {
 	<nav>
 	 <div>
 		<a href="#home" className="flex items-center gap-2">
-		 <img src="/images/logo.png" alt="logo" />
-		 <p>Velvet Pour</p>
+		 <img src={data.imageLogo} alt="logo" />
+		 <p>{data.title}</p>
 		</a>
 		
 		<ul>
-		 {navLinks.map((link) => (
+		 {data.navLinks.map((link) => (
 			<li key={link.id}>
 			 <a href={`#${link.id}`}>{link.title}</a>
 			</li>

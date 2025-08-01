@@ -3,7 +3,7 @@ import { useGSAP } from '@gsap/react'
 import { SplitText} from 'gsap/all';
 import gsap from 'gsap';
 
-const Contact = () => {
+const Contact = ({data}) => {
  	useGSAP(() => {
 		const titleSplit = SplitText.create('#contact h2', { type: 'words' });
 		
@@ -31,8 +31,8 @@ const Contact = () => {
  
  return (
 	<footer id="contact">
-	 <img src="/images/footer-right-leaf.png" alt="leaf-right" id="f-right-leaf" />
-	 <img src="/images/footer-left-leaf.png" alt="leaf-left" id="f-left-leaf" />
+	 <img src={data.imgRight} alt="leaf-right" id="f-right-leaf" />
+	 <img src={data.imgLeft} alt="leaf-left" id="f-left-leaf" />
 	 
 	 <div className="content">
 		<h2>Where to Find Us</h2>
@@ -61,7 +61,7 @@ const Contact = () => {
 		 <h3>Socials</h3>
 		 
 		 <div className="flex-center gap-5">
-			{socials.map((social) => (
+			{data.socials.map((social) => (
 			 <a
 			 	key={social.name}
 				href={social.url}

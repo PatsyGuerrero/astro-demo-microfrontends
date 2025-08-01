@@ -15,11 +15,11 @@ const pageTitle = "Pagina de contenido";
 ---
 
 <>
-	<NavBar client:only="react"  />
+	<NavBar client:only="react" data={data.nav} />
 	<Hero client:only="react" data={data.hero}/>
+	<Cocktails client:only="react" data={data.cockails} />
+	<About client:only="react" data={data.about} />
 	<Art client:only="react" data={data.art}/>
-	<Cocktails client:only="react"  />
-	<About client:only="react"  />
-	<Menu client:only="react"  />
-	<Contact client:only="react" />
+	<Menu client:only="react"  data={data.menu}/>
+	<Contact client:only="react" data={data.contact} />
 </>

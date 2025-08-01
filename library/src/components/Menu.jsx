@@ -5,7 +5,7 @@ import { useRef, useState } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
 
-const Menu = () => {
+const Menu = ({data}) => {
  const contentRef = useRef();
  const [currentIndex, setCurrentIndex] = useState(0);
  
@@ -22,7 +22,7 @@ const Menu = () => {
 	})
  }, [currentIndex]);
  
- const totalCocktails = allCocktails.length;
+ const totalCocktails = data.allCocktails.length;
  
  const goToSlide = (index) => {
 	const newIndex = (index + totalCocktails) % totalCocktails;
@@ -40,15 +40,15 @@ const Menu = () => {
  
  return (
 	<section id="menu" aria-labelledby="menu-heading">
-	 <img src="/images/slider-left-leaf.png" alt="left-leaf" id="m-left-leaf" />
-	 <img src="/images/slider-right-leaf.png" alt="right-leaf" id="m-right-leaf" />
+	 <img src={data.imgSliderLeft} alt="left-leaf" id="m-left-leaf" />
+	 <img src={data.imgSliderRight} alt="right-leaf" id="m-right-leaf" />
 	 
 	 <h2 id="menu-heading" className="sr-only">
 		Cocktail Menu
 	 </h2>
 	 
 	 <nav className="cocktail-tabs" aria-label="Cocktail Navigation">
-		{allCocktails.map((cocktail, index) => {
+		{data.allCocktails.map((cocktail, index) => {
 		 const isActive = index === currentIndex;
 		 
 		 return (
@@ -68,12 +68,12 @@ const Menu = () => {
 		<div className="arrows">
 		 <button className="text-left" onClick={() => goToSlide(currentIndex - 1)}>
 			<span>{prevCocktail.name}</span>
-			<img src="/images/right-arrow.png" alt="right-arrow" aria-hidden="true" />
+			<img src={data.imgArrowRight} alt="right-arrow" aria-hidden="true" />
 		 </button>
 		 
 		 <button className="text-left" onClick={() => goToSlide(currentIndex + 1)}>
 			<span>{nextCocktail.name}</span>
-			<img src="/images/left-arrow.png" alt="left-arrow" aria-hidden="true" />
+			<img src={data.imgArrowLeft} alt="left-arrow" aria-hidden="true" />
 		 </button>
 		</div>
 		

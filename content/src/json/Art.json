@@ -1,23 +1,23 @@
 {
   "art": {
     "title": "The Art",
-  "subtitle": "Sip-Worthy Perfection",
-  "headline": "Made with Craft, Poured with Passion",
-  "paragraph": "This isn’t just a drink. It’s a carefully crafted moment made just for you.",
-  "featureLists":[
-    "Perfectly balanced blends",
-    "Garnished to perfection",
-    "Ice-cold every time",
-    "Expertly shaken & stirred"
-  ],
-  "goodLists" :[
-    "Handpicked ingredients",
-    "Signature techniques",
-    "Bartending artistry in action",
-    "Freshly muddled flavors"
-  ],
-  "imageIcon": "/content/images/check.png",
-  "imageUnder": "/content/images/under-img.jpg"
+    "subtitle": "Sip-Worthy Perfection",
+    "headline": "Made with Craft, Poured with Passion",
+    "paragraph": "This isn’t just a drink. It’s a carefully crafted moment made just for you.",
+    "featureLists":[
+      "Perfectly balanced blends",
+      "Garnished to perfection",
+      "Ice-cold every time",
+      "Expertly shaken & stirred"
+    ],
+    "goodLists" :[
+      "Handpicked ingredients",
+      "Signature techniques",
+      "Bartending artistry in action",
+      "Freshly muddled flavors"
+    ],
+    "imageIcon": "/content/images/check.png",
+    "imageUnder": "/content/images/under-img.jpg"
   },
   "hero":{
     "title": "MOJITO",
@@ -27,7 +27,160 @@
     "headFirst":"Sip the Spirit ",
     "headSecond":"of Summer",
     "subtitle" :"Every cocktail on our menu is a blend of premium ingredients, creative flair, and timeless recipes - designed to delight your senses.",
+    "imageIcon": "/content/images/check.png",
+    "imageUnder": "/content/images/under-img.jpg",
     "link": "View Cocktails",
     "video": "/content/videos/output.mp4"
+  },
+  "nav":{
+    "title":"Velvet Pour",
+    "navLinks" :[
+      {
+        "id": "cocktails",
+        "title": "Cocktails"
+      },
+      {
+        "id": "about",
+        "title": "About Us"
+      },
+      {
+        "id": "art",
+        "title": "The Art"
+      },
+      {
+        "id": "contact",
+        "title": "Contact"
+      }
+     ],
+     "imageLogo": "/content/images/logo.png"
+  },
+  "cockails":{
+    "imgLeft" : "/content/images/cocktail-left-leaf.png",
+    "imgRight" : "/content/images/cocktail-right-leaf.png",
+    "title": "Cocktails",
+    "headSecond": "Most popular cocktails:",
+    "headThird": "Most loved cocktails:",
+    "cocktailLists": [
+      {
+         "name": "Chapel Hill Shiraz",
+         "country": "AU",
+         "detail": "Battle",
+         "price": "$10"
+      },
+      {
+         "name": "Caten Malbee",
+         "country": "AU",
+         "detail": "Battle",
+         "price": "$49"
+      },
+      {
+         "name": "Rhino Pale Ale",
+         "country": "CA",
+         "detail": "750 ml",
+         "price": "$20"
+      },
+      {
+         "name": "Irish Guinness",
+         "country": "IE",
+         "detail": "600 ml",
+         "price": "$29"
+      }
+     ],
+    "mockTailLists": [
+      {
+        "name": "Tropical Bloom",
+        "country": "US",
+        "detail": "Battle",
+        "price": "$10"
+      },
+      {
+        "name": "Passionfruit Mint",
+        "country": "US",
+        "detail": "Battle",
+        "price": "$49"
+      },
+      {
+        "name": "Citrus Glow",
+        "country": "CA",
+        "detail": "750 ml",
+        "price": "$20"
+      },
+      {
+        "name": "Lavender Fizz",
+        "country": "IE",
+        "detail": "600 ml",
+        "price": "$29"
+      }
+    ]
+  },
+  "about": {
+    "title":"Best Cocktails",
+    "imgFirst": "/content/images/abt1.png",
+    "imgSecond": "/content/images/abt2.png",
+    "imgThird": "/content/images/abt3.png",
+    "imgFourth": "/content/images/abt4.png",
+    "imgFifth": "/content/images/abt5.png"
+  },
+  "menu": {
+    "imgSliderLeft": "/content/images/slider-left-leaf.png",
+    "imgSliderRight": "/content/images/slider-right-leaf.png",
+    "imgArrowLeft": "/content/images/left-arrow.png",
+    "imgArrowRight": "/content/images/right-arrow.png",
+    "allCocktails":[
+      {
+         "id": 1,
+         "name": "Classic Mojito",
+         "image": "/content/images/drink1.png",
+         "title": "Simple Ingredients, Bold Flavor",
+         "description":
+          "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights."
+      },
+      {
+         "id": 2,
+         "name": "Raspberry Mojito",
+         "image": "/content/images/drink2.png",
+         "title": "A Zesty Classic That Never Fails",
+         "description":
+          "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing."
+      },
+      {
+         "id": 3,
+         "name": "Violet Breeze",
+         "image": "/content/images/drink3.png",
+         "title": "Simple Ingredients, Bold Flavor",
+         "description":
+          "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights."
+      },
+      {
+         "id": 4,
+         "name": "Curacao Mojito",
+         "image": "/content/images/drink4.png",
+         "title": "Crafted With Care, Poured With Love",
+         "description":
+          "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing."
+      }
+     ]
+
+  },
+  "contact" : {
+    "imgRight": "/content/images/footer-right-leaf.png",
+    "imgLeft": "/content/images/footer-left-leaf.png",
+    "social":[
+      {
+         "name": "Instagram",
+         "icon": "/content/images/insta.png",
+         "url": "#"
+      },
+      {
+         "name": "X (Twitter)",
+         "icon": "/content/images/x.png",
+         "url": "#"
+      },
+      {
+         "name": "Facebook",
+         "icon": "/content/images/fb.png",
+         "url": "#"
+      }
+     ]
   }
 }
