@@ -31,7 +31,7 @@ services:
       context: ./library
       dockerfile: ./Dockerfile
     ports:
-      - 5143:4173
+      - 4173:4173
     
   nginx_service:
     image: astro.nginx
