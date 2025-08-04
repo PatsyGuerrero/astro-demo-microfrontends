@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Si necesitas pasar REMOTE_LIBRARY_URL durante build:
 ARG REMOTE_LIBRARY_URL
-ENV REMOTE_LIBRARY_URL="148.230.93.172:4173"
+ENV REMOTE_LIBRARY_URL=$REMOTE_LIBRARY_URL
 
 COPY package.json package-lock.json ./
 
