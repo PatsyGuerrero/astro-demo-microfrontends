@@ -1,6 +1,5 @@
 'use client';
 
-import { allCocktails } from '../constants/index';
 import { useRef, useState } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
@@ -15,7 +14,6 @@ const Menu = ({data}) => {
 	 xPercent: 0, opacity: 1, duration: 1, ease: 'power1.inOut'
 	})
 	gsap.fromTo('.details h2', { yPercent: 100, opacity: 0 }, {
-	 yPercent: 0, opacity: 100, ease: 'power1.inOut'
 	})
 	gsap.fromTo('.details p', { yPercent: 100, opacity: 0 }, {
 	 yPercent: 0, opacity: 100, ease: 'power1.inOut'
@@ -31,7 +29,7 @@ const Menu = ({data}) => {
  }
  
  const getCocktailAt = (indexOffset) => {
-	return allCocktails[(currentIndex + indexOffset + totalCocktails) % totalCocktails]
+	return data.allCocktails[(currentIndex + indexOffset + totalCocktails) % totalCocktails]
  }
  
  const currentCocktail = getCocktailAt(0);

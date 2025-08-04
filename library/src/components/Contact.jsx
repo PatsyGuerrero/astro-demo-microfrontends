@@ -61,7 +61,7 @@ const Contact = ({data}) => {
 		 <h3>Socials</h3>
 		 
 		 <div className="flex-center gap-5">
-			{data.socials.map((social) => (
+			{data.social.map((social) => (
 			 <a
 			 	key={social.name}
 				href={social.url}
