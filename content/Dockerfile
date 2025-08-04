@@ -3,7 +3,6 @@ FROM node:lts AS base
 WORKDIR /app
 
 # Si necesitas pasar REMOTE_LIBRARY_URL durante build:
-ARG REMOTE_LIBRARY_URL
 ENV REMOTE_LIBRARY_URL=$REMOTE_LIBRARY_URL
 
 COPY package.json package-lock.json ./
