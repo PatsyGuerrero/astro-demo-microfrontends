@@ -6,7 +6,7 @@ import react from '@astrojs/react';
 import dotenv from 'dotenv';
 
 dotenv.config(); // 👈 esto permite leer process.env en tiempo de build
-const remoteBaseUrl = process.env.REMOTE_LIBRARY_URL ?? 'http://localhost:4173' ;
+const remoteBaseUrl = process.env.REMOTE_LIBRARY_URL ?? 'http://localhost' ;
 
 console.log('base', remoteBaseUrl);
 
@@ -15,7 +15,7 @@ export default defineConfig({
   base:'/content/',
   integrations: [react(), moduleFederation({
     remotes: {
-      library:  `http://148.230.93.172:4173/assets/remoteEntry.js`
+      library:  `${remoteBaseUrl}:4173/assets/remoteEntry.js`
     },
     shared: ['react', 'react-dom', 'gsap', '@gsap/react'],
   })],
