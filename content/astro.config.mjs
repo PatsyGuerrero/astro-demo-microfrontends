@@ -15,7 +15,7 @@ export default defineConfig({
   base:'/content/',
   integrations: [react(), moduleFederation({
     remotes: {
-      library:  `${remoteBaseUrl}:4173/assets/remoteEntry.js`
+      library:  `http://148.230.93.172:4173/assets/remoteEntry.js`
     },
     shared: ['react', 'react-dom', 'gsap', '@gsap/react'],
   })],
